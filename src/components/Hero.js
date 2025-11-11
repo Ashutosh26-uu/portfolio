@@ -65,11 +65,6 @@ const Hero = () => {
             <span className="name-layer">ASHUTOSH</span>
             <span className="name-layer">ASHUTOSH</span>
           </h1>
-          <h1 className="name-3d surname">
-            <span className="name-layer">MISHRA</span>
-            <span className="name-layer">MISHRA</span>
-            <span className="name-layer">MISHRA</span>
-          </h1>
         </div>
 
         <div className="title-explosive">

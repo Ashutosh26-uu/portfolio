@@ -1772,7 +1772,7 @@ body.light-theme .skill-item {
 
 .glitch-text::before {
   animation: glitch-1 0.5s infinite;
-  color: #00ff00;
+  color: #ff6b00;
   z-index: -1;
 }
 
@@ -1815,9 +1815,9 @@ body.light-theme .skill-item {
 
 .meter-fill {
   height: 100%;
-  background: linear-gradient(90deg, #00ff00, #ffff00, #00ffff);
+  background: linear-gradient(90deg, #ff6b00, #ffff00, #00ffff);
   transition: width 0.5s ease;
-  box-shadow: 0 0 20px #00ff00;
+  box-shadow: 0 0 20px #ff6b00;
 }
 
 .meter-value {
@@ -1829,11 +1829,11 @@ body.light-theme .skill-item {
 }
 
 .warning-text {
-  color: #00ff00;
+  color: #ff6b00;
   font-weight: 700;
   font-size: 1.2rem;
   animation: blink 0.5s infinite;
-  text-shadow: 0 0 20px #00ff00;
+  text-shadow: 0 0 20px #ff6b00;
   margin-top: 2rem;
 }
 
@@ -1929,8 +1929,9 @@ body.light-theme .skill-item {
   font-size: 5rem;
   font-weight: 900;
   position: relative;
-  margin: 0;
+  margin: 1rem 0;
   text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .name-layer {
@@ -1942,25 +1943,25 @@ body.light-theme .skill-item {
 }
 
 .name-3d .name-layer:nth-child(1) {
-  color: #00ff00;
-  transform: translate(-4px, -4px);
+  color: #ff6b00;
+  transform: translate(-8px, -8px);
   z-index: 3;
 }
 
 .name-3d .name-layer:nth-child(2) {
-  color: #00ffff;
+  color: #ffffff;
   transform: translate(0px, 0px);
   z-index: 2;
 }
 
 .name-3d .name-layer:nth-child(3) {
-  color: #0000ff;
-  transform: translate(4px, 4px);
+  color: #3b82f6;
+  transform: translate(8px, 8px);
   z-index: 1;
 }
 
 .surname {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .title-explosive {
@@ -2016,7 +2017,7 @@ body.light-theme .skill-item {
 .cta-bhaukali {
   display: inline-block;
   padding: 20px 40px;
-  background: linear-gradient(45deg, #00ff00, #ffff00, #00ffff, #0000ff, #ff00ff, #ffffff);
+  background: linear-gradient(45deg, #ff6b00, #ffff00, #00ffff, #3b82f6, #ff00ff, #ffffff);
   background-size: 400% 400%;
   color: #000;
   text-decoration: none;
