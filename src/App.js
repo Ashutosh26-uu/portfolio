@@ -6,6 +6,7 @@ import SkillsSection from './components/SkillsSection';
 import InteractiveStats from './components/InteractiveStats';
 import InteractiveTimeline from './components/InteractiveTimeline';
 import Projects from './components/Projects';
+import ProjectShowcase from './components/ProjectShowcase';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -16,25 +17,34 @@ import ThemeToggle from './components/ThemeToggle';
 import FloatingElements from './components/FloatingElements';
 import LoadingScreen from './components/LoadingScreen';
 import PageTransition from './components/PageTransition';
-import WelcomeAnimation from './components/WelcomeAnimation';
+import ExplosiveIntro from './components/ExplosiveIntro';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [showWelcome, setShowWelcome] = useState(false);
+  const [showIntro, setShowIntro] = useState(false);
+  const [introComplete, setIntroComplete] = useState(false);
 
   const handleLoadingComplete = () => {
     setIsLoading(false);
-    setTimeout(() => setShowWelcome(true), 500);
+    setTimeout(() => setShowIntro(true), 500);
+  };
+
+  const handleIntroComplete = () => {
+    setShowIntro(false);
+    setIntroComplete(true);
   };
 
   if (isLoading) {
     return <LoadingScreen onComplete={handleLoadingComplete} />;
   }
 
+  if (showIntro) {
+    return <ExplosiveIntro onComplete={handleIntroComplete} />;
+  }
+
   return (
     <PageTransition>
-      <div className="App">
-        {showWelcome && <WelcomeAnimation />}
+      <div className="App bhaukali-mode">
         <ParticleBackground />
         <MouseTracker />
         <FloatingElements />
@@ -44,6 +54,7 @@ function App() {
         <Hero />
         <About />
         <SkillsSection />
+        <ProjectShowcase />
         <InteractiveStats />
         <InteractiveTimeline />
         <Projects />

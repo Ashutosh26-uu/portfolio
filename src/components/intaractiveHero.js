@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Hero = () => {
+const BhaukaliHero = () => {
   const [displayedText, setDisplayedText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [showFireworks, setShowFireworks] = useState(false);
@@ -100,7 +100,9 @@ const Hero = () => {
           </a>
         </div>
 
-
+        <div className="warning-banner">
+          🚨 WARNING: EXTREME CODING SKILLS AHEAD 🚨
+        </div>
       </div>
 
       <div className="energy-waves">
@@ -112,4 +114,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default BhaukaliHero;
