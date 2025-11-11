@@ -136,6 +136,24 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: fadeInUp 1s ease;
+  min-height: 5rem;
+}
+
+.typewriter {
+  display: inline-block;
+}
+
+.cursor {
+  display: inline-block;
+  background: var(--accent-color);
+  margin-left: 3px;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }
 
 .hero-content p {
