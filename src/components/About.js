@@ -6,24 +6,27 @@ const About = () => {
       <div className="container">
         <h2>About Me</h2>
         <div className="about-content">
-          <img 
-            src="/photos/Ashutosh.jpg" 
-            alt="Ashutosh Mishra" 
-            className="profile-image"
-            onError={(e) => {
-              const canvas = document.createElement('canvas');
-              canvas.width = 350;
-              canvas.height = 350;
-              const ctx = canvas.getContext('2d');
-              ctx.fillStyle = '#3b82f6';
-              ctx.fillRect(0, 0, 350, 350);
-              ctx.fillStyle = '#ffffff';
-              ctx.font = '28px Arial';
-              ctx.textAlign = 'center';
-              ctx.fillText('Ashutosh M', 175, 185);
-              e.target.src = canvas.toDataURL();
-            }}
-          />
+          <div className="profile-container">
+            <img 
+              src="/photos/Ashutosh.2.jpg" 
+              alt="Ashutosh Mishra" 
+              className="profile-image"
+              onError={(e) => {
+                const canvas = document.createElement('canvas');
+                canvas.width = 350;
+                canvas.height = 350;
+                const ctx = canvas.getContext('2d');
+                ctx.fillStyle = '#3b82f6';
+                ctx.fillRect(0, 0, 350, 350);
+                ctx.fillStyle = '#ffffff';
+                ctx.font = '28px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText('Ashutosh M', 175, 185);
+                e.target.src = canvas.toDataURL();
+              }}
+            />
+            <div className="profile-glow"></div>
+          </div>
           <div className="about-text">
             <p>
               Hello everyone! I am Ashutosh Mishra, student of B.Tech CSE 2nd year. 
